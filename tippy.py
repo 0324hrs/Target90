@@ -11,5 +11,6 @@ tip_percentage = tip/ 100
 tt_tip_amount = tip_percentage * bill
 
 total_billed = bill + tt_tip_amount
+bill_per_person = float(total_billed / people)
 # 
-print(total_billed)
+print(f"each person will pay ksh {bill_per_person}")
